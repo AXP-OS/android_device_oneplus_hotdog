@@ -155,6 +155,7 @@
       <value>2649600   </value>  <!-- 2649.6  MHz CPU speed -->
       <value>2745600   </value>  <!-- 2745.6  MHz CPU speed -->
       <value>2841600 </value>  <!-- 2841.6  MHz CPU speed -->
+      <value>2956800</value>  <!-- 2956.8  MHz CPU speed -->
   </array>
 
   <!-- Current at each CPU speed for cluster 0, as per 'cpu.speeds.cluster0'.
@@ -207,7 +208,7 @@
   <!-- Current at each CPU speed for cluster 2, as per 'cpu.speeds.cluster2'.
        Like cpu.speeds.cluster2, there must be one of these present for
        each heterogeneous CPU cluster. -->
-  <array name="cpu.core_power.cluster1">
+  <array name="cpu.core_power.cluster2">
       <value>82</value>  <!-- ~60mA -->
       <value>89</value>  <!-- ~80mA -->
       <value>93</value>  <!-- ~80mA -->
@@ -228,6 +229,7 @@
       <value>344</value>  <!-- ~190mA -->
       <value>371</value>  <!-- ~190mA -->
       <value>446</value>  <!-- ~200mA -->
+      <value>466</value>  <!-- ~200mA -->
   </array>
 
   <!-- Current when CPU is awake -->
