@@ -1,0 +1,22 @@
+      name: "Sync with upstream"
+
+      on:
+        workflow_dispatch:
+        schedule:
+          - cron: "11 13 * * *"
+
+      # Sets permissions of the GITHUB_TOKEN to allow pushing via github token
+      permissions:
+        contents: write
+
+      jobs:
+        sync-upstream:
+          name: "Sync with upstream"
+          uses: AXP-OS/.github/.github/workflows/sync_upstream.yml@main
+          with:
+              remote-repo: LineageOS/${{ github.event.repository.name }}
+              remote-branch: lineage-22.2
+              local-repo: ${{ github.repository_owner }}/${{ github.event.repository.name }}
+              local-branch: "axp-a15"
+              dryrun: false
+          secrets: inherit
